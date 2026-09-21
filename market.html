@@ -2,6 +2,7 @@
 <html lang="en" dir="rtl">
 
 <head>
+    <!-- تنظیمات و فایل‌های صفحه -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/market.css">
@@ -10,7 +11,9 @@
 </head>
 
 <body>
+    <!-- لنگر صفحه -->
     <section id="supermarket"></section>
+    <!-- منوی خدمات -->
     <div class="category-bar">
         <a href="#" class="category-item">
             <img src="./assets/img/download.svg" alt="">
@@ -42,16 +45,17 @@
 
     </div>
 
-    <div class="bottom-side-fullbox">
-        <div class="insidebox-bottomside">
-            <div class="top-bottomside">
-                <div class="insidebox-top-bottomside">
-                    <div class="rightinsidebox-top-bottomside">
-                        <div class="searchbox-bottomside">
+    <!-- نوار جستجو -->
+    <div class="search-header">
+        <div class="search-header-inner">
+            <div class="search-header-row">
+                <div class="search-header-content">
+                    <div class="search-header-right">
+                        <div class="search-bar">
                             <div class="search-icon">
                                 <img src="./assets/img/svgexport-2.svg" alt="">
                             </div>
-                            <input class="search-text-full-box" type="search" placeholder="جستجو در سوپرمارکت"
+                            <input class="search-input" type="search" placeholder="جستجو در سوپرمارکت"
                                 aria-label="جستجو در سوپرمارکت" autocomplete="off">
                         </div>
                     </div>
@@ -60,6 +64,7 @@
         </div>
     </div>
 
+    <!-- انتخاب آدرس -->
     <div class="location">
         <img class="location-icon" src="./assets/img/add-location-superapp-icon.svg" alt="">
         <!--
@@ -72,58 +77,62 @@
             </g>
         </svg> -->
         <span>انتخاب آدرس</span>
-        <img class="svg2" src="./assets/img/blue-arrow-down-superapp-icon.svg" alt="">
+        <img class="location-arrow" src="./assets/img/blue-arrow-down-superapp-icon.svg" alt="">
     </div>
-    <div class="banner1">
+    <!-- بنر اصلی -->
+    <div class="hero-banner">
         <img src="./assets/img/marketbanner1.gif" alt="">
     </div>
 
-    <div class="hayperandsuper">
-        <div class="super">
+    <!-- کارت‌های انتخاب فروشگاه -->
+    <div class="store-types">
+        <div class="store-supermarket">
             <img src="./assets/img/super.webp" alt="">
             <p>هایپرمارکت</p>
         </div>
-        <div class="hayper">
+        <div class="store-hypermarket">
             <img src="./assets/img/hayper.webp" alt="">
             <p>سوپر های محل</p>
         </div>
 
     </div>
+    <!-- دسته‌بندی‌ها -->
     <div class="market-categories">
 
-        <div class="market-item">
+        <div class="market-category">
             <img src="./assets/img/swipersuper1.webp" alt="">
             <span>تازه بازار</span>
         </div>
 
-        <div class="market-item">
+        <div class="market-category">
             <img src="./assets/img/swipersuper2.webp" alt="">
             <span>میوه و سبزی</span>
         </div>
 
-        <div class="market-item">
+        <div class="market-category">
             <img src="./assets/img/swipersuper3.webp" alt="">
             <span>پروتئینی</span>
         </div>
 
-        <div class="market-item">
+        <div class="market-category">
             <img src="./assets/img/swipersuper4.webp" alt="">
             <span>نانوایی</span>
         </div>
 
-        <div class="market-item">
+        <div class="market-category">
             <img src="./assets/img/swipersuper5.webp" alt="">
             <span>شیرینی و آجیل</span>
         </div>
 
-        <div class="market-item">
+        <div class="market-category">
             <img src="./assets/img/swipersuper6.webp" alt="">
             <span>پت شاپ</span>
         </div>
 
     </div>
 
-    <div class="swiper mySwiper">
+    <!-- اسلایدر تبلیغاتی -->
+    <div class="swiper promo-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./assets/img/banerssuper1.webp" alt=""></div>
             <div class="swiper-slide"><img src="./assets/img/banerssuper2.webp" alt=""></div>
@@ -134,7 +143,7 @@
 
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.mySwiper', {
+        var swiper = new Swiper('.promo-slider', {
             slidesPerView: 1.12,
             spaceBetween: 8,
             centeredSlides: true,
@@ -153,29 +162,31 @@
         });
     </script>
 
-    <div class="marketsurati">
+    <!-- بنر دوم -->
+    <div class="market-promo-banner">
         <img src="./assets/img/maghaze.webp" alt="">
     </div>
 
-    <div class="vitamine">
-        <div class="topvit">
+    <!-- محصولات پروتئینی -->
+    <div class="protein-section">
+        <div class="protein-header">
             <h5>تا 50% تخفیف پروتئین 🔥</h5>
             <a href="">
-                <p class="ptozih">همه</p>
+                <p class="see-all">همه</p>
             </a>
         </div>
-        <div class="middlevit">
+        <div class="protein-subtitle">
         </div>
-        <div class="bottomvit">
+        <div class="protein-list">
             <a href="">
-                <img class="kala1" src="./assets/img/pro1.webp" alt="">
+                <img class="product-img" src="./assets/img/pro1.webp" alt="">
                 <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>242,000</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         38%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>149,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -184,12 +195,12 @@
             <a href="">
                 <img src="./assets/img/pro2.webp" alt="">
                 <p>کپسول روغن ماهی1000 امگا3 کارن بسته50...</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>797,500</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         37%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>501,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -198,12 +209,12 @@
             <a href="">
                 <img src="./assets/img/pro3.webp" alt="">
                 <p>قرص زینک پلاس پابا یوروویتال بسته 60 عددی</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>924,000</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         71%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>149,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -212,12 +223,12 @@
             <a href="">
                 <img src="./assets/img/pro4.webp" alt="">
                 <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>242,000</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         38%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>149,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -226,12 +237,12 @@
             <a href="">
                 <img src="./assets/img/pro5.webp" alt="">
                 <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>242,000</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         38%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>149,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -240,12 +251,12 @@
             <a href="">
                 <img src="./assets/img/pro6.webp" alt="">
                 <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>242,000</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         38%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>270,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -254,12 +265,12 @@
             <a href="">
                 <img src="./assets/img/pro7.webp" alt="">
                 <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>242,000</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         38%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>149,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -268,12 +279,12 @@
             <a href="">
                 <img src="./assets/img/pro9.webp" alt="">
                 <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>242,000</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         38%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>149,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -282,12 +293,12 @@
             <a href="">
                 <img src="./assets/img/pro10.webp" alt="">
                 <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-                <div class="afterbeffore1">
+                <div class="price-box">
                     <span>242,000</span>
-                    <div class="red1">
+                    <div class="discount-badge">
                         38%
                     </div>
-                    <div class="price1">
+                    <div class="final-price">
                         <span>149,000</span>
                         <img src="./assets/img/svgexport-9.svg" alt="">
                     </div>
@@ -302,6 +313,7 @@
         </div>
     </div>
 
+    <!-- منوی ثابت پایین -->
     <nav class="bottom-nav" aria-label="منوی اصلی">
         <a class="bottom-nav-item active" href="market.html">
             <img src="./assets/img/homeIconV4Active.svg" alt="">

@@ -1,9 +1,12 @@
+/* فونت فارسی */
 @font-face {
   font-family: digi;
-  src: url('../fonts/iranyekanwebregular.b95439c1.26xpsrtw74cat\ (1\).woff') format('woff');
+  src: url("../fonts/iranyekanwebregular.b95439c1.26xpsrtw74cat\ (1\).woff")
+    format("woff");
   font-display: swap;
 }
 
+/* ریست و فونت کلی */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +14,7 @@
   font-family: digi, sans-serif;
 }
 
+/* بدنه صفحه و فاصله منو */
 html {
   background-color: #fff;
 }
@@ -20,6 +24,7 @@ body {
   padding-bottom: 64px;
 }
 
+/* منوی ثابت پایین */
 .bottom-nav {
   position: fixed;
   right: 50%;
@@ -66,14 +71,17 @@ body {
   font-weight: 700;
 }
 
-@media (min-width:769px) {
+/* وسط‌چین کردن صفحات عریض */
+@media (min-width: 769px) {
   body {
     width: 768px;
     margin: 0 auto;
   }
 }
 
-@media (min-width:320px) {
+/* چیدمان اصلی سوپرمارکت */
+@media (min-width: 320px) {
+  /* منوی خدمات */
   .category-bar {
     width: 100%;
     display: flex;
@@ -147,7 +155,8 @@ body {
     border-radius: 8px;
   }
 
-  .bottom-side-fullbox {
+  /* نوار جستجو */
+  .search-header {
     width: 100%;
     height: 50px;
     padding-left: 5px;
@@ -159,7 +168,7 @@ body {
     flex-flow: row nowrap;
   }
 
-  .insidebox-bottomside {
+  .search-header-inner {
     width: 100%;
     height: 50px;
     overflow: hidden;
@@ -167,13 +176,13 @@ body {
     display: block;
   }
 
-  .top-bottomside {
+  .search-header-row {
     width: 100%;
     height: 42px;
     padding: 0 15px;
   }
 
-  .insidebox-top-bottomside {
+  .search-header-content {
     width: 100%;
     height: 42px;
     display: flex;
@@ -183,7 +192,7 @@ body {
     gap: 15px;
   }
 
-  .rightinsidebox-top-bottomside {
+  .search-header-right {
     max-width: 100%;
     height: 42px;
     flex: 1;
@@ -194,7 +203,7 @@ body {
     border: 0;
   }
 
-  .left-inside-box-top-bottom-side {
+  .notification-link {
     padding: 12px;
     background-color: #fff;
     border: 1px solid #e0e0e2;
@@ -208,14 +217,14 @@ body {
     position: relative;
   }
 
-  .bell-left-inside-box-top-bottom-side {
+  .notification-icon {
     padding-top: 5px;
   }
 
-  .searchbox-bottomside {
+  .search-bar {
     width: 100%;
     height: 42px;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     padding-left: 12px;
     padding-right: 12px;
     justify-content: space-between;
@@ -234,7 +243,7 @@ body {
     display: flex;
   }
 
-  .search-text-full-box {
+  .search-input {
     overflow: hidden;
     min-width: 0;
     padding-left: 8px;
@@ -258,12 +267,12 @@ body {
     caret-color: #ff5e1f;
   }
 
-  .search-text-full-box::placeholder {
+  .search-input::placeholder {
     color: rgb(129, 133, 139);
     opacity: 0.7;
   }
 
-  .text-box {
+  .search-placeholder {
     gap: 4px;
     align-items: start;
     display: flex;
@@ -271,14 +280,14 @@ body {
     height: 35px;
   }
 
-  .jostoju {
+  .search-label {
     font-size: 14px;
     height: 40px;
     opacity: 0.7;
     color: rgb(129, 133, 139);
   }
 
-  .bell-left-inside-box-top-bottom-side {
+  .notification-icon {
     border-radius: 50%;
     border: black;
   }
@@ -288,11 +297,11 @@ body {
     height: 24px;
   }
 
-  .jostoju {
+  .search-label {
     font-family: digi;
   }
 
-
+  /* انتخاب آدرس */
   .location {
     display: flex;
     align-items: center;
@@ -319,7 +328,7 @@ body {
     object-fit: contain;
   }
 
-  .location .svg2 {
+  .location .location-arrow {
     order: 0;
     display: block;
     width: 14px;
@@ -328,7 +337,7 @@ body {
   }
 
   .location::after {
-    content: 'افزودن آدرس';
+    content: "افزودن آدرس";
     order: 2;
     margin-left: auto;
     margin-right: 4px;
@@ -345,12 +354,14 @@ body {
     white-space: nowrap;
   }
 
-  .banner1 img {
+  /* بنر اصلی */
+  .hero-banner img {
     width: 100%;
     height: 60px;
   }
 
-  .hayperandsuper {
+  /* کارت‌های انتخاب فروشگاه */
+  .store-types {
     width: 100%;
     height: 106px;
     display: flex;
@@ -361,7 +372,7 @@ body {
     gap: 5px;
   }
 
-  .super {
+  .store-supermarket {
     background-color: rgb(212, 235, 211);
     border-radius: 24px;
     align-items: center;
@@ -373,24 +384,24 @@ body {
     width: 100%;
   }
 
-  .super img {
+  .store-supermarket img {
     width: 64px;
     height: 64px;
   }
 
-  .super p {
+  .store-supermarket p {
     font-family: digi;
     font-size: 11px;
     font-weight: 600;
   }
 
-  .hayper p {
+  .store-hypermarket p {
     font-family: digi;
     font-size: 11px;
     font-weight: 600;
   }
 
-  .hayper {
+  .store-hypermarket {
     background-color: rgb(250, 225, 212);
     border-radius: 24px;
     align-items: center;
@@ -402,31 +413,29 @@ body {
     width: 100%;
   }
 
-  .hayper img {
+  .store-hypermarket img {
     width: 64px;
     height: 64px;
   }
 
-  .storyline {
+  .story-rail {
     width: 100%;
     max-width: 100%;
     margin-top: 30px;
   }
 
-  .storyline .swiper2 {
+  .story-rail .story-slider {
     width: 100%;
     max-width: 100%;
     height: 92px;
     overflow-x: auto;
-
   }
 
-  .swiper2-wrapper {
+  .story-slider-track {
     display: flex;
-
   }
 
-  .swiper-slide2 {
+  .story-slide {
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -435,8 +444,7 @@ body {
     flex-shrink: 0;
   }
 
-
-  .swiper-slide2 a {
+  .story-slide a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -450,32 +458,29 @@ body {
     text-decoration: none;
   }
 
-
-
-
-  .swiper-slide2 img {
+  .story-slide img {
     display: block;
     width: 52px;
     height: 52px;
     object-fit: cover;
   }
 
-  .swiper-slide2 span {
+  .story-slide span {
     font-family: digi;
     font-size: 10px;
     display: flex;
     color: #3f4064;
   }
 
-  .storyline .a1 span {
-    margin-bottom: 15px;
-
-  }
-
-  .storyline .a4 span {
+  .story-rail .story-link-1 span {
     margin-bottom: 15px;
   }
 
+  .story-rail .story-link-4 span {
+    margin-bottom: 15px;
+  }
+
+  /* دسته‌بندی‌ها */
   .market-categories {
     width: 100%;
     display: flex;
@@ -486,7 +491,7 @@ body {
     direction: rtl;
   }
 
-  .market-item {
+  .market-category {
     width: 72px;
     min-width: 72px;
     display: flex;
@@ -496,7 +501,7 @@ body {
     text-align: center;
   }
 
-  .market-item img {
+  .market-category img {
     width: 72px;
     height: 72px;
     padding: 6px;
@@ -505,7 +510,7 @@ body {
     background-color: #fff;
   }
 
-  .market-item span {
+  .market-category span {
     font-family: digi;
     width: 100%;
     margin-top: 8px;
@@ -514,6 +519,7 @@ body {
     text-align: center;
   }
 
+  /* اسلایدر تبلیغاتی */
   .swiper {
     width: 100%;
     height: clamp(155px, 25vw, 230px);
@@ -539,14 +545,16 @@ body {
     object-fit: cover;
   }
 
-  .marketsurati img {
+  /* بنر دوم */
+  .market-promo-banner img {
     width: 100%;
     height: 70px;
     display: block;
     margin-top: 20px;
   }
 
-  .vitamine {
+  /* محصولات پروتئینی */
+  .protein-section {
     width: 100%;
     height: 300px;
     display: flex;
@@ -554,20 +562,20 @@ body {
     flex-direction: column;
   }
 
-  .vitamine .topvit {
+  .protein-section .protein-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 8px;
   }
 
-  .vitamine .topvit h5 {
+  .protein-section .protein-header h5 {
     font-family: digi;
     font-size: 14px;
     font-weight: 700;
   }
 
-  .vitamine .topvit a {
+  .protein-section .protein-header a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -579,7 +587,7 @@ body {
     text-decoration: none;
   }
 
-  .vitamine .topvit .ptozih {
+  .protein-section .protein-header .see-all {
     font-family: digi;
     margin: 0;
     color: #3f4064;
@@ -589,7 +597,7 @@ body {
     white-space: nowrap;
   }
 
-  .vitamine .bottomvit {
+  .protein-section .protein-list {
     width: 100%;
     height: 240px;
     column-gap: 8px;
@@ -604,11 +612,11 @@ body {
     scrollbar-width: none;
   }
 
-  .vitamine .bottomvit::-webkit-scrollbar {
+  .protein-section .protein-list::-webkit-scrollbar {
     display: none;
   }
 
-  .vitamine .bottomvit a {
+  .protein-section .protein-list a {
     position: relative;
     display: flex;
     font-family: digi;
@@ -627,8 +635,8 @@ body {
     color: #3f4064;
   }
 
-  .vitamine .bottomvit a::before {
-    content: '\0634\06AF\0641\062A\200C\0627\0646\06AF\06CC\0632';
+  .protein-section .protein-list a::before {
+    content: "\0634\06AF\0641\062A\200C\0627\0646\06AF\06CC\0632";
     position: absolute;
     top: 7px;
     right: 8px;
@@ -638,8 +646,8 @@ body {
     font-weight: 700;
   }
 
-  .vitamine .bottomvit a::after {
-    content: '+';
+  .protein-section .protein-list a::after {
+    content: "+";
     position: absolute;
     top: 106px;
     right: 8px;
@@ -656,15 +664,15 @@ body {
     text-align: center;
   }
 
-  .vitamine .bottomvit a:empty {
+  .protein-section .protein-list a:empty {
     display: none;
   }
 
-  .vitamine .bottomvit a:has(img[src='']) {
+  .protein-section .protein-list a:has(img[src=""]) {
     display: none;
   }
 
-  .vitamine .bottomvit a>img:first-child {
+  .protein-section .protein-list a > img:first-child {
     width: 100%;
     height: 128px;
     flex-shrink: 0;
@@ -673,7 +681,7 @@ body {
     object-fit: contain;
   }
 
-  .vitamine .bottomvit a>p {
+  .protein-section .protein-list a > p {
     display: -webkit-box;
     min-height: 34px;
     margin: 8px 8px 0;
@@ -687,7 +695,7 @@ body {
     -webkit-line-clamp: 2;
   }
 
-  .vitamine .middlevit p {
+  .protein-section .protein-subtitle p {
     font-family: digi;
     color: rgb(98, 102, 109);
     font-size: 12px;
@@ -695,18 +703,18 @@ body {
     margin-top: 10px;
   }
 
-  .vitamine .bottomvit a .kala1 {
+  .protein-section .protein-list a .product-img {
     background-color: gray;
   }
 
-  .vitamine .bottomvit a .afterbeffore1 {
+  .protein-section .protein-list a .price-box {
     margin-top: auto;
     width: 100%;
     padding: 4px 8px 8px;
     direction: rtl;
   }
 
-  .vitamine .bottomvit a .afterbeffore1 span {
+  .protein-section .protein-list a .price-box span {
     color: rgb(192, 194, 197);
     font-family: digi;
     font-size: 11px;
@@ -716,7 +724,7 @@ body {
     display: inline-block;
   }
 
-  .vitamine .bottomvit a .red1 {
+  .protein-section .protein-list a .discount-badge {
     width: 28px;
     height: 18px;
     padding: 0;
@@ -731,51 +739,50 @@ body {
     vertical-align: middle;
   }
 
-  .bottomvit a p {
+  .protein-list a p {
     color: rgb(66, 71, 80);
   }
 
-  .bottomvit a .price1 {
+  .protein-list a .final-price {
     align-items: center;
     display: flex;
     direction: rtl;
     justify-content: flex-end;
     gap: 5px;
-
   }
 
-  .vitamine .bottomvit a .price1 span {
+  .protein-section .protein-list a .final-price span {
     color: rgb(35, 37, 78);
     text-decoration: none;
     font-size: 12px;
     font-weight: 700;
   }
-
 }
 
-@media (min-width:577px) {
+/* تنظیمات تبلت */
+@media (min-width: 577px) {
   .category-bar {
     gap: 24px;
     padding-inline: 24px;
   }
 
-  .bottom-side-fullbox {
+  .search-header {
     margin-top: 2px;
   }
 
-  .banner1 img {
+  .hero-banner img {
     display: block;
     max-height: 260px;
     object-fit: cover;
   }
 
-  .hayperandsuper {
+  .store-types {
     height: 150px;
     gap: 12px;
   }
 
-  .super,
-  .hayper {
+  .store-supermarket,
+  .store-hypermarket {
     border-radius: 18px;
   }
 
@@ -788,13 +795,13 @@ body {
     height: clamp(155px, 25vw, 230px);
   }
 
-  .marketsurati img {
+  .market-promo-banner img {
     height: auto;
     max-height: 110px;
     object-fit: cover;
   }
 
-  .vitamine .bottomvit {
+  .protein-section .protein-list {
     justify-content: center;
   }
 }
