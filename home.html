@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" dir="rtl">
   <head>
+    <!-- تنظیمات و فایل‌های صفحه -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -8,7 +9,9 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="bannertop"><img src="./assets/img/bannertop.gif" alt="" /></div>
+    <!-- بنر بالای صفحه -->
+    <div class="top-banner"><img src="./assets/img/bannertop.gif" alt="" /></div>
+    <!-- منوی خدمات -->
     <div class="category-bar">
       <a href="#" class="category-item">
         <img src="./assets/img/download.svg" alt="" />
@@ -47,20 +50,21 @@
         <span>دارو</span>
       </a>
     </div>
+    <!-- جستجو، اعلان و آدرس -->
     <header>
-      <div class="bottom-side-fullbox">
-        <div class="insidebox-bottomside">
-          <div class="top-bottomside">
-            <div class="insidebox-top-bottomside">
-              <div class="rightinsidebox-top-bottomside">
-                <div class="searchbox-bottomside">
+      <div class="search-header">
+        <div class="search-header-inner">
+          <div class="search-header-row">
+            <div class="search-header-content">
+              <div class="search-header-right">
+                <div class="search-bar">
                   <div class="search-icon">
                     <img src="./assets/img/svgexport-2.svg" alt="" />
                   </div>
-                  <span class="search-text-full-box">
-                    <div class="text-box">
-                      <span class="jostoju">جستجو در</span>
-                      <div class="digikalasvg">
+                  <span class="search-input">
+                    <div class="search-placeholder">
+                      <span class="search-label">جستجو در</span>
+                      <div class="search-brand-logo">
                         <img src="./assets/img/لوگوی دیجیکالا.svg" alt="" />
                       </div>
                     </div>
@@ -75,8 +79,8 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="left-inside-box-top-bottom-side">
-                <div class="bell-left-inside-box-top-bottom-side">
+              <a href="#" class="notification-link">
+                <div class="notification-icon">
                   <svg
                     width="24px"
                     height="24px"
@@ -122,6 +126,7 @@
           </div>
         </div>
       </div>
+      <!-- منوی ثابت پایین -->
       <nav class="bottom-nav" aria-label="منوی اصلی">
         <a class="bottom-nav-item active" href="home.html">
           <img src="./assets/img/homeIconV4Active.svg" alt="" />
@@ -165,7 +170,7 @@
         </svg>
         <span>انتخاب آدرس</span>
         <svg
-          class="svg2"
+          class="location-arrow"
           width="64px"
           height="64px"
           viewBox="0 0 24 24"
@@ -191,7 +196,8 @@
       </div>
     </header>
 
-    <div class="swiper mySwiper">
+    <!-- اسلایدر تبلیغاتی -->
+    <div class="swiper promo-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./assets/img/swiper1-1.webp" alt="" />
@@ -219,7 +225,7 @@
 
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".promo-slider", {
         slidesPerView: 1.12,
         spaceBetween: 8,
         centeredSlides: true,
@@ -238,59 +244,60 @@
       });
     </script>
 
-    <div class="storyline">
-      <div class="swiper2">
-        <div class="swiper2-wrapper">
-          <div class="swiper-slide2">
-            <a class="a1" href="">
+    <!-- استوری‌ها -->
+    <div class="story-rail">
+      <div class="story-slider">
+        <div class="story-slider-track">
+          <div class="story-slide">
+            <a class="story-link-1" href="">
               <img src="./assets/img/storyline1.webp" alt="" />
               <span>سوپرمارکت</span>
             </a>
           </div>
-          <div class="swiper-slide2">
-            <a class="a2" href="">
+          <div class="story-slide">
+            <a class="story-link-2" href="">
               <img src="./assets/img/storyline2.webp" alt="" />
               <span>طلا و نقره دیجیتال</span>
             </a>
           </div>
-          <div class="swiper-slide2">
-            <a class="a3" href="">
+          <div class="story-slide">
+            <a class="story-link-3" href="">
               <img src="./assets/img/storyline3.webp" alt="" />
               <span>همه چیز برای مدرسه</span>
             </a>
           </div>
-          <div class="swiper-slide2">
-            <a class="a4" href="">
+          <div class="story-slide">
+            <a class="story-link-4" href="">
               <img src="./assets/img/storyline4.webp" alt="" />
               <span>دیجی استایل</span>
             </a>
           </div>
-          <div class="swiper-slide2">
-            <a class="a5" href="">
+          <div class="story-slide">
+            <a class="story-link-5" href="">
               <img src="./assets/img/storyline5.webp" alt="" />
               <span>سرویس ادواری خودرو</span>
             </a>
           </div>
-          <div class="swiper-slide2">
-            <a class="a6" href="">
+          <div class="story-slide">
+            <a class="story-link-6" href="">
               <img src="./assets/img/storyline6.webp" alt="" />
               <span>پرقروش های تابستون</span>
             </a>
           </div>
-          <div class="swiper-slide2">
-            <a class="a7" href="">
+          <div class="story-slide">
+            <a class="story-link-7" href="">
               <img src="./assets/img/storyline7.webp" alt="" />
               <span>پرفروش های کفش</span>
             </a>
           </div>
-          <div class="swiper-slide2">
-            <a class="a8" href="">
+          <div class="story-slide">
+            <a class="story-link-8" href="">
               <img src="./assets/img/storyline8.webp" alt="" />
               <span>زندگی دانشجویی</span>
             </a>
           </div>
-          <div class="swiper-slide2">
-            <a class="a9" href="">
+          <div class="story-slide">
+            <a class="story-link-9" href="">
               <svg
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -323,7 +330,7 @@
       <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
 
       <script>
-        var swiper = new Swiper("swiper2", {
+        var swiper = new Swiper("story-slider", {
           slidesPerView: "auto",
           spaceBetween: 30,
           freeMode: true,
@@ -335,24 +342,25 @@
       </script>
     </div>
 
-    <div class="ghermez">
-      <div class="topghermez">
-        <img class="imggh1" src="./assets/img/svgexport-6.svg" alt="" />
-        <img class="imggh2" src="./assets/img/svgexport-7.svg" alt="" />
-        <div class="timer">
-          <div class="timebox">
+    <!-- شگفت‌انگیز قرمز -->
+    <div class="flash-deals-red">
+      <div class="flash-deals-red-header">
+        <img class="deals-title-icon" src="./assets/img/svgexport-6.svg" alt="" />
+        <img class="deals-timer-icon" src="./assets/img/svgexport-7.svg" alt="" />
+        <div class="countdown">
+          <div class="countdown-unit">
             <small>02</small>
           </div>
-          <div class="timebox">
+          <div class="countdown-unit">
             <small>35</small>
           </div>
-          <div class="timebox">
+          <div class="countdown-unit">
             <small>48</small>
           </div>
         </div>
         <span>همه></span>
       </div>
-      <div class="bottomghermez">
+      <div class="flash-deals-red-list">
         <a class="deal-card" href="#">
           <img src="./assets/img/vit1.webp" alt="محصول پیشنهادی" />
           <p>قرص منیزیم مگنوم بسته 60 عددی</p>
@@ -386,7 +394,8 @@
       </div>
     </div>
 
-    <div class="minibanners">
+    <!-- بنرهای تبلیغاتی -->
+    <div class="promo-banner-grid">
       <img src="./assets/img/minibanner1.webp" alt="" />
       <img src="./assets/img/minibanner2.webp" alt="" />
       <img src="./assets/img/minibanner3.webp" alt="" />
@@ -397,24 +406,25 @@
       <img src="./assets/img/minibanner8.webp" alt="" />
     </div>
 
-    <div class="shegeftsabz">
-      <div class="topsabz">
-        <img class="imggh1" src="./assets/img/svgexport-6.svg" alt="" />
-        <img class="imggh2" src="./assets/img/svgexport-7.svg" alt="" />
-        <div class="timer">
-          <div class="timebox">
+    <!-- شگفت‌انگیز سبز -->
+    <div class="flash-deals-green">
+      <div class="flash-deals-green-header">
+        <img class="deals-title-icon" src="./assets/img/svgexport-6.svg" alt="" />
+        <img class="deals-timer-icon" src="./assets/img/svgexport-7.svg" alt="" />
+        <div class="countdown">
+          <div class="countdown-unit">
             <small>02</small>
           </div>
-          <div class="timebox">
+          <div class="countdown-unit">
             <small>35</small>
           </div>
-          <div class="timebox">
+          <div class="countdown-unit">
             <small>48</small>
           </div>
         </div>
         <span>همه></span>
       </div>
-      <div class="bottomshegeft">
+      <div class="flash-deals-green-list">
         <a class="deal-card" href="#">
           <img src="./assets/img/daf1.webp" alt="محصول پیشنهادی" />
           <p>دفتر لغت 100 برگ طرح حروف انگلیسی</p>
@@ -448,118 +458,119 @@
       </div>
     </div>
 
-    <div class="dastebandi">
-      <div class="stories-wrapper">
-        <div class="topside">
+    <!-- دسته‌بندی‌های دایره‌ای -->
+    <div class="category-circles">
+      <div class="category-circles-inner">
+        <div class="category-circles-title">
           <span>دسته بندی ها</span>
         </div>
-        <div class="midleside">
-          <div class="story-item">
-            <div class="story-img">
+        <div class="category-circles-row-top">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story1.webp" alt="" />
             </div>
             <span>موبایل</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2.webp" alt="" />
             </div>
             <span>کالای دیجیتال</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story3.webp" alt="" />
             </div>
             <span>لوازم خانگی برقی</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story4.webp" alt="" />
             </div>
             <span>مد و پوشاک</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story5.webp" alt="" />
             </div>
             <span>خودرو و موتور سیکلت</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story6.webp" alt="" />
             </div>
             <span>تجهیزات پزشکی و سلامت</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story7.webp" alt="" />
             </div>
             <span>ورزش و سفر</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story8.webp" alt="" />
             </div>
             <span>کالای خوراکی و اساسی</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story9.webp" alt="" />
             </div>
             <span>محصولات بومی و محلی</span>
           </div>
         </div>
-        <div class="bottomside">
-          <div class="story-item">
-            <div class="story-img">
+        <div class="category-circles-row-bottom">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-1.webp" alt="" />
             </div>
             <span>لپ تاپ</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-2.webp" alt="" />
             </div>
             <span>خانه و آشپزخانه</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-3.webp" alt="" />
             </div>
             <span>آرایشی بهداشتی</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-4.webp" alt="" />
             </div>
             <span>طلا ونقره</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-5.webp" alt="" />
             </div>
             <span>ابزار آلات و تجهیزات</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-6.webp" alt="" />
             </div>
             <span>کتاب،لوازم تحریر و هنر</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-7.webp" alt="" />
             </div>
             <span>کارت هدیه و گیفت کارد</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-8.webp" alt="" />
             </div>
             <span>اسباب بازی،کودک و نوزاد</span>
           </div>
-          <div class="story-item">
-            <div class="story-img">
+          <div class="category-circle">
+            <div class="category-circle-img">
               <img src="./assets/img/story2-9.webp" alt="" />
             </div>
             <span>پت شاپ</span>
@@ -568,30 +579,33 @@
       </div>
     </div>
 
-    <div class="mesvak">
+    <!-- بنر تمام‌عرض -->
+    <div class="promo-banner-toothbrush">
       <img src="./assets/img/bannermesvak.webp" alt="" />
     </div>
 
-    <div class="saat">
+    <!-- بنر تمام‌عرض دوم -->
+    <div class="promo-banner-watch">
       <img src="./assets/img/bannersaat.webp" alt="" />
     </div>
 
-    <div class="vitamine">
-      <div class="topvit">
+    <!-- بخش ویتامین و مکمل -->
+    <div class="vitamins-section">
+      <div class="vitamins-header">
         <h5>ویتامین ها و مواد معدنی</h5>
-        <a href=""><p class="ptozih">مشاهده همه></p></a>
+        <a href=""><p class="see-all">مشاهده همه></p></a>
       </div>
-      <div class="middlevit">
+      <div class="vitamins-subtitle">
         <p>بر اساس سلیقه شما</p>
       </div>
-      <div class="bottomvit">
+      <div class="vitamins-list">
         <a href="">
-          <img class="kala1" src="./assets/img/vit1.webp" alt="" />
+          <img class="product-img" src="./assets/img/vit1.webp" alt="" />
           <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -600,10 +614,10 @@
         <a href="">
           <img src="./assets/img/vit2.webp" alt="" />
           <p>کپسول روغن ماهی1000 امگا3 کارن بسته50...</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>797,500</span>
-            <div class="red1">37%</div>
-            <div class="price1">
+            <div class="discount-badge">37%</div>
+            <div class="final-price">
               <span>501,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -612,10 +626,10 @@
         <a href="">
           <img src="./assets/img/vit3.webp" alt="" />
           <p>قرص زینک پلاس پابا یوروویتال بسته 60 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>924,000</span>
-            <div class="red1">71%</div>
-            <div class="price1">
+            <div class="discount-badge">71%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -624,10 +638,10 @@
         <a href="">
           <img src="./assets/img/vit4.webp" alt="" />
           <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -636,10 +650,10 @@
         <a href="">
           <img src="./assets/img/vit5.webp" alt="" />
           <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -648,10 +662,10 @@
         <a href="">
           <img src="./assets/img/vit6.webp" alt="" />
           <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>270,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -660,10 +674,10 @@
         <a href="">
           <img src="./assets/img/vit7.webp" alt="" />
           <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -672,10 +686,10 @@
         <a href="">
           <img src="./assets/img/vit8.webp" alt="" />
           <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -684,10 +698,10 @@
         <a href="">
           <img src="./assets/img/vit9.webp" alt="" />
           <p>قرص ویتامین D3-1000واحدی بسته 60 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -700,22 +714,23 @@
       </div>
     </div>
 
-    <div class="daftar">
-      <div class="topdaf">
+    <!-- بخش دفتر و لوازم‌التحریر -->
+    <div class="stationery-section">
+      <div class="stationery-header">
         <h5>دفتر</h5>
-        <a href=""><p class="ptozih">مشاهده همه></p></a>
+        <a href=""><p class="see-all">مشاهده همه></p></a>
       </div>
-      <div class="middledaf">
+      <div class="stationery-subtitle">
         <p>بر اساس سلیقه شما</p>
       </div>
-      <div class="bottomdaf">
+      <div class="stationery-list">
         <a href="">
-          <img class="kala1" src="./assets/img/daf1.webp" alt="" />
+          <img class="product-img" src="./assets/img/daf1.webp" alt="" />
           <p>دفتر لغت 100 برگ طرح حروف انگلیسی کد W313+</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -724,10 +739,10 @@
         <a href="">
           <img src="./assets/img/daf2.webp" alt="" />
           <p>دفتر مشق مدل ایفل بسته 5 عددی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>797,500</span>
-            <div class="red1">37%</div>
-            <div class="price1">
+            <div class="discount-badge">37%</div>
+            <div class="final-price">
               <span>501,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -736,10 +751,10 @@
         <a href="">
           <img src="./assets/img/daf3.webp" alt="" />
           <p>دفتر یادداشت مشایخ طرح قلب کد 5244</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>924,000</span>
-            <div class="red1">71%</div>
-            <div class="price1">
+            <div class="discount-badge">71%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -748,10 +763,10 @@
         <a href="">
           <img src="./assets/img/daf4.webp" alt="" />
           <p>دفتر مشق 100 برگ اورین طرح فرندز</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -760,10 +775,10 @@
         <a href="">
           <img src="./assets/img/daf5.webp" alt="" />
           <p>دفتر زبان 50 برگ خندالو مدل دو خط طرح ماه و پروانه کد N4482</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -772,10 +787,10 @@
         <a href="">
           <img src="./assets/img/daf6.webp" alt="" />
           <p>دفتر مشق 100 برگ مستر راد مدل کهکشانی طرح تحصیلی کد fiory 2066</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>270,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -784,10 +799,10 @@
         <a href="">
           <img src="./assets/img/daf7.webp" alt="" />
           <p>دفترچه یادداشت مدل بیسکویت شکلاتی</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -798,10 +813,10 @@
           <p>
             دفتر مشق مستر راد مدل خرس های کله فندقی طرح تحصیلی کد fiory 2145
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -810,10 +825,10 @@
         <a href="">
           <img src="./assets/img/daf9.webp" alt="" />
           <p>دفتر مشق مستر راد مدل پالت کد 1571 palette</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -824,10 +839,10 @@
           <p>
             دفتر زبان مدل زبان، 60 برگ با صحافی سیمی طرح حروف انگلیسی کد L318
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -837,29 +852,31 @@
       </div>
     </div>
 
-    <div class="bannersaat">
+    <!-- بنر بین بخش‌ها -->
+    <div class="promo-banner-mid">
       <img src="./assets/img/bannersaat.webp" alt="" />
     </div>
 
-    <div class="cover">
-      <div class="topcov">
+    <!-- بخش قاب موبایل -->
+    <div class="products-section">
+      <div class="products-header">
         <h5>کیف و کاور گوشی</h5>
-        <a href=""><p class="ptozih">مشاهده همه></p></a>
+        <a href=""><p class="see-all">مشاهده همه></p></a>
       </div>
-      <div class="middlecov">
+      <div class="products-subtitle">
         <p>بر اساس سلیقه شما</p>
       </div>
-      <div class="bottomcov">
+      <div class="products-list">
         <a href="">
-          <img class="kala1" src="./assets/img/cover1.webp" alt="" />
+          <img class="product-img" src="./assets/img/cover1.webp" alt="" />
           <p>
             کاور مگنوا مدل GripTech مناسب برای گوشی موبایل شیائومی Mi 11T / Mi
             11T Pro
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -871,10 +888,10 @@
             کاور لوکسار مدل iP13 _Carbon Line مناسب برای گوشی موبایل اپل iPhone
             13
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>797,500</span>
-            <div class="red1">37%</div>
-            <div class="price1">
+            <div class="discount-badge">37%</div>
+            <div class="final-price">
               <span>501,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -883,10 +900,10 @@
         <a href="">
           <img src="./assets/img/cover3.webp" alt="" />
           <p>کاور مدل SLC مناسب برای کیس اپل ایرپاد 3</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>924,000</span>
-            <div class="red1">71%</div>
-            <div class="price1">
+            <div class="discount-badge">71%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -898,10 +915,10 @@
             کاور گاردتاک مدل SoCool_Note13 مناسب برای گوشی موبایل شیائومی Redmi
             Note 13 4G
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -910,10 +927,10 @@
         <a href="">
           <img src="./assets/img/cover5.webp" alt="" />
           <p>قاب مدل سیلیکونی مناسب برای گوشی موبایل اپل ۱6 iphone</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -924,10 +941,10 @@
           <p>
             کاور بادیگارد مدل Flex مناسب برای گوشی موبایل شیائومی Poco X7 Pro
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>270,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -936,10 +953,10 @@
         <a href="">
           <img src="./assets/img/cover7.webp" alt="" />
           <p>کاور تاپ قاب مدل CC مناسب برای گوشی موبایل اپل iPhone 13 / 14</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -950,10 +967,10 @@
           <p>
             کاور آکادا مدل Magsafe مناسب برای گوشی موبایل سامسونگ Galaxy S24 FE
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -964,10 +981,10 @@
           <p>
             کاور مدل مگسیف رنگی مناسب برای گوشی موبایل شیائومی Redmi Note 14 4G
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -979,10 +996,10 @@
             کاور قاب تک مدل مگ سیف magsafe مناسب برای گوشی موبایل اپل iPhone 15
             Pro Max
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -992,25 +1009,26 @@
       </div>
     </div>
 
-    <div class="cover">
-      <div class="topcov">
+    <!-- بخش موبایل -->
+    <div class="products-section">
+      <div class="products-header">
         <h5>گوشی موبایل</h5>
-        <a href=""><p class="ptozih">مشاهده همه></p></a>
+        <a href=""><p class="see-all">مشاهده همه></p></a>
       </div>
-      <div class="middlecov">
+      <div class="products-subtitle">
         <p>بر اساس سلیقه شما</p>
       </div>
-      <div class="bottomcov">
+      <div class="products-list">
         <a href="">
-          <img class="kala1" src="./assets/img/gushi1.webp" alt="" />
+          <img class="product-img" src="./assets/img/gushi1.webp" alt="" />
           <p>
             کاور مگنوا مدل GripTech مناسب برای گوشی موبایل شیائومی Mi 11T / Mi
             11T Pro
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1022,10 +1040,10 @@
             کاور لوکسار مدل iP13 _Carbon Line مناسب برای گوشی موبایل اپل iPhone
             13
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>797,500</span>
-            <div class="red1">37%</div>
-            <div class="price1">
+            <div class="discount-badge">37%</div>
+            <div class="final-price">
               <span>501,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1034,10 +1052,10 @@
         <a href="">
           <img src="./assets/img/gushi3.webp" alt="" />
           <p>کاور مدل SLC مناسب برای کیس اپل ایرپاد 3</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>924,000</span>
-            <div class="red1">71%</div>
-            <div class="price1">
+            <div class="discount-badge">71%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1049,10 +1067,10 @@
             کاور گاردتاک مدل SoCool_Note13 مناسب برای گوشی موبایل شیائومی Redmi
             Note 13 4G
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1061,10 +1079,10 @@
         <a href="">
           <img src="./assets/img/gushi5.webp" alt="" />
           <p>قاب مدل سیلیکونی مناسب برای گوشی موبایل اپل ۱6 iphone</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1075,10 +1093,10 @@
           <p>
             کاور بادیگارد مدل Flex مناسب برای گوشی موبایل شیائومی Poco X7 Pro
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>270,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1087,10 +1105,10 @@
         <a href="">
           <img src="./assets/img/gushi7.webp" alt="" />
           <p>کاور تاپ قاب مدل CC مناسب برای گوشی موبایل اپل iPhone 13 / 14</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1101,10 +1119,10 @@
           <p>
             کاور آکادا مدل Magsafe مناسب برای گوشی موبایل سامسونگ Galaxy S24 FE
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1115,10 +1133,10 @@
           <p>
             کاور مدل مگسیف رنگی مناسب برای گوشی موبایل شیائومی Redmi Note 14 4G
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1130,10 +1148,10 @@
             کاور قاب تک مدل مگ سیف magsafe مناسب برای گوشی موبایل اپل iPhone 15
             Pro Max
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1143,25 +1161,26 @@
       </div>
     </div>
 
-    <div class="cover">
-      <div class="topcov">
+    <!-- بخش هدفون و هندزفری -->
+    <div class="products-section">
+      <div class="products-header">
         <h5>هدفون،هدست و هندزفری</h5>
-        <a href=""><p class="ptozih">مشاهده همه></p></a>
+        <a href=""><p class="see-all">مشاهده همه></p></a>
       </div>
-      <div class="middlecov">
+      <div class="products-subtitle">
         <p>بر اساس سلیقه شما</p>
       </div>
-      <div class="bottomcov">
+      <div class="products-list">
         <a href="">
-          <img class="kala1" src="./assets/img/air1.webp" alt="" />
+          <img class="product-img" src="./assets/img/air1.webp" alt="" />
           <p>
             کاور مگنوا مدل GripTech مناسب برای گوشی موبایل شیائومی Mi 11T / Mi
             11T Pro
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1173,10 +1192,10 @@
             کاور لوکسار مدل iP13 _Carbon Line مناسب برای گوشی موبایل اپل iPhone
             13
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>797,500</span>
-            <div class="red1">37%</div>
-            <div class="price1">
+            <div class="discount-badge">37%</div>
+            <div class="final-price">
               <span>501,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1185,10 +1204,10 @@
         <a href="">
           <img src="./assets/img/air3.webp" alt="" />
           <p>کاور مدل SLC مناسب برای کیس اپل ایرپاد 3</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>924,000</span>
-            <div class="red1">71%</div>
-            <div class="price1">
+            <div class="discount-badge">71%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1200,10 +1219,10 @@
             کاور گاردتاک مدل SoCool_Note13 مناسب برای گوشی موبایل شیائومی Redmi
             Note 13 4G
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1212,10 +1231,10 @@
         <a href="">
           <img src="./assets/img/air5.webp" alt="" />
           <p>قاب مدل سیلیکونی مناسب برای گوشی موبایل اپل ۱6 iphone</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1226,10 +1245,10 @@
           <p>
             کاور بادیگارد مدل Flex مناسب برای گوشی موبایل شیائومی Poco X7 Pro
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>270,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1238,10 +1257,10 @@
         <a href="">
           <img src="./assets/img/air7.webp" alt="" />
           <p>کاور تاپ قاب مدل CC مناسب برای گوشی موبایل اپل iPhone 13 / 14</p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1252,10 +1271,10 @@
           <p>
             کاور آکادا مدل Magsafe مناسب برای گوشی موبایل سامسونگ Galaxy S24 FE
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1266,10 +1285,10 @@
           <p>
             کاور مدل مگسیف رنگی مناسب برای گوشی موبایل شیائومی Redmi Note 14 4G
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>
@@ -1281,10 +1300,10 @@
             کاور قاب تک مدل مگ سیف magsafe مناسب برای گوشی موبایل اپل iPhone 15
             Pro Max
           </p>
-          <div class="afterbeffore1">
+          <div class="price-box">
             <span>242,000</span>
-            <div class="red1">38%</div>
-            <div class="price1">
+            <div class="discount-badge">38%</div>
+            <div class="final-price">
               <span>149,000</span>
               <img src="./assets/img/svgexport-9.svg" alt="" />
             </div>

@@ -1,9 +1,11 @@
+/* ریست کلی */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* چیدمان موبایل و آیپد */
 @media (min-width: 320px) and (max-width: 768px) {
   body {
     padding-bottom: 64px;
@@ -13,12 +15,13 @@
     width: 100%;
   }
 
-  .bannertop {
+  /* بنر بالای صفحه */
+  .top-banner {
     width: 100%;
     height: 35px;
   }
 
-  .bannertop img {
+  .top-banner img {
     object-fit: cover;
     width: 100%;
     height: 35px;
@@ -47,7 +50,7 @@
     border-radius: 8px;
   }
 
-  .bottom-side-fullbox {
+  .search-header {
     width: 100%;
     height: 60px;
     padding-left: 5px;
@@ -59,6 +62,7 @@
     flex-flow: row nowrap;
   }
 
+  /* منوی ثابت پایین */
   .bottom-nav {
     position: fixed;
     right: 50%;
@@ -106,7 +110,7 @@
     font-weight: 700;
   }
 
-  .insidebox-bottomside {
+  .search-header-inner {
     width: 100%;
     height: 75px;
     overflow: hidden;
@@ -114,13 +118,13 @@
     display: block;
   }
 
-  .top-bottomside {
+  .search-header-row {
     width: 100%;
     height: 40px;
     padding: 0 15px;
   }
 
-  .insidebox-top-bottomside {
+  .search-header-content {
     width: 100%;
     height: 40px;
     display: flex;
@@ -130,7 +134,7 @@
     gap: 15px;
   }
 
-  .rightinsidebox-top-bottomside {
+  .search-header-right {
     max-width: 100%;
     height: 40px;
     flex: 1;
@@ -141,7 +145,7 @@
     border: 1px solid #e0e0e2;
   }
 
-  .left-inside-box-top-bottom-side {
+  .notification-link {
     padding: 12px;
     background-color: #fff;
     border: 1px solid #e0e0e2;
@@ -155,11 +159,11 @@
     position: relative;
   }
 
-  .bell-left-inside-box-top-bottom-side {
+  .notification-icon {
     padding-top: 5px;
   }
 
-  .searchbox-bottomside {
+  .search-bar {
     width: 100%;
     height: 40px;
     padding-left: 12px;
@@ -180,7 +184,7 @@
     display: flex;
   }
 
-  .search-text-full-box {
+  .search-input {
     overflow: hidden;
     padding-left: 8px;
     padding-right: 8px;
@@ -195,7 +199,7 @@
     align-items: end;
   }
 
-  .text-box {
+  .search-placeholder {
     gap: 4px;
     align-items: start;
     display: flex;
@@ -203,21 +207,21 @@
     height: 35px;
   }
 
-  .jostoju {
+  .search-label {
     font-size: 14px;
     height: 40px;
     opacity: 0.7;
     color: rgb(129, 133, 139);
   }
 
-  .digikalasvg {
+  .search-brand-logo {
     margin-top: 5px;
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
   }
 
-  .digikalasvg img {
+  .search-brand-logo img {
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -234,7 +238,7 @@
     display: flex;
   }
 
-  .bell-left-inside-box-top-bottom-side {
+  .notification-icon {
     border-radius: 50%;
     border: black;
   }
@@ -249,14 +253,16 @@
     height: 24px;
   }
 
-  .jostoju {
+  .search-label {
     font-family: digi;
   }
 
-  .bottom-side-fullbox {
+  /* جستجو و اعلان‌ها */
+  .search-header {
     margin-top: 90px;
   }
 
+  /* انتخاب آدرس */
   .location {
     display: flex;
     margin-top: 0px;
@@ -273,10 +279,11 @@
     color: rgb(147, 76, 14);
   }
 
-  .location .svg2 {
+  .location .location-arrow {
     color: rgb(147, 76, 14);
   }
 
+  /* اسلایدر تبلیغاتی */
   .swiper {
     width: 100%;
     height: clamp(155px, 25vw, 230px);
@@ -302,24 +309,25 @@
     object-fit: cover;
   }
 
-  .storyline {
+  /* استوری‌ها */
+  .story-rail {
     width: 100%;
     max-width: 100%;
     margin-top: 30px;
   }
 
-  .storyline .swiper2 {
+  .story-rail .story-slider {
     width: 100%;
     max-width: 100%;
     height: 92px;
     overflow-x: auto;
   }
 
-  .swiper2-wrapper {
+  .story-slider-track {
     display: flex;
   }
 
-  .swiper-slide2 {
+  .story-slide {
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -328,7 +336,7 @@
     flex-shrink: 0;
   }
 
-  .swiper-slide2 a {
+  .story-slide a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,29 +350,30 @@
     text-decoration: none;
   }
 
-  .swiper-slide2 img {
+  .story-slide img {
     display: block;
     width: 52px;
     height: 52px;
     object-fit: cover;
   }
 
-  .swiper-slide2 span {
+  .story-slide span {
     font-family: digi;
     font-size: 10px;
     display: flex;
     color: #3f4064;
   }
 
-  .storyline .a1 span {
+  .story-rail .story-link-1 span {
     margin-bottom: 15px;
   }
 
-  .storyline .a4 span {
+  .story-rail .story-link-4 span {
     margin-bottom: 15px;
   }
 
-  .ghermez {
+  /* شگفت‌انگیز قرمز */
+  .flash-deals-red {
     background-color: #d22c4e;
     width: 100%;
     height: 290px;
@@ -372,7 +381,7 @@
     margin-top: 20px;
   }
 
-  .ghermez .topghermez {
+  .flash-deals-red .flash-deals-red-header {
     display: flex;
     width: 100%;
     height: 48px;
@@ -384,31 +393,31 @@
     box-sizing: border-box;
   }
 
-  .ghermez .topghermez .imggh1 {
+  .flash-deals-red .flash-deals-red-header .deals-title-icon {
     width: 20px;
     height: 20px;
     margin-left: 6px;
     object-fit: contain;
   }
 
-  .ghermez .topghermez .imggh2 {
+  .flash-deals-red .flash-deals-red-header .deals-timer-icon {
     width: 108px;
     height: 22px;
     object-fit: contain;
   }
 
-  .ghermez .timer {
+  .flash-deals-red .countdown {
     gap: 4px;
   }
 
-  .timer {
+  .countdown {
     display: flex;
     gap: 4px;
     direction: ltr;
     margin-right: 4px;
   }
 
-  .timebox {
+  .countdown-unit {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -420,17 +429,17 @@
     box-shadow: 0 1px 4px #ccc;
   }
 
-  .timebox span {
+  .countdown-unit span {
     font-size: 18px;
     font-weight: bold;
   }
 
-  .timebox small {
+  .countdown-unit small {
     font-size: 9px;
     color: black;
   }
 
-  .ghermez .bottomghermez {
+  .flash-deals-red .flash-deals-red-list {
     width: 100%;
     max-width: 100%;
     height: 228px;
@@ -442,7 +451,7 @@
     scrollbar-width: none;
   }
 
-  .ghermez .bottomghermez::-webkit-scrollbar {
+  .flash-deals-red .flash-deals-red-list::-webkit-scrollbar {
     display: none;
   }
 
@@ -483,7 +492,7 @@
     text-align: left;
   }
 
-  .ghermez .topghermez span {
+  .flash-deals-red .flash-deals-red-header span {
     font-family: digi;
     color: white;
     font-size: 11px;
@@ -493,7 +502,8 @@
     right: auto;
   }
 
-  .minibanners {
+  /* بنرهای دوستونه */
+  .promo-banner-grid {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -506,7 +516,7 @@
     margin-top: 20px;
   }
 
-  .minibanners img {
+  .promo-banner-grid img {
     width: 100%;
     height: 100px;
     object-fit: cover;
@@ -514,7 +524,8 @@
     display: block;
   }
 
-  .shegeftsabz {
+  /* شگفت‌انگیز سبز */
+  .flash-deals-green {
     width: 100%;
     height: 290px;
     background: linear-gradient(
@@ -525,7 +536,7 @@
     margin-top: 30px;
   }
 
-  .shegeftsabz .topsabz {
+  .flash-deals-green .flash-deals-green-header {
     display: flex;
     width: 100%;
     height: 48px;
@@ -537,24 +548,24 @@
     box-sizing: border-box;
   }
 
-  .shegeftsabz .topsabz .imggh1 {
+  .flash-deals-green .flash-deals-green-header .deals-title-icon {
     width: 20px;
     height: 20px;
     margin-left: 6px;
     object-fit: contain;
   }
 
-  .shegeftsabz .topsabz .imggh2 {
+  .flash-deals-green .flash-deals-green-header .deals-timer-icon {
     width: 108px;
     height: 22px;
     object-fit: contain;
   }
 
-  .shegeftsabz .timer {
+  .flash-deals-green .countdown {
     gap: 4px;
   }
 
-  .shegeftsabz .bottomshegeft {
+  .flash-deals-green .flash-deals-green-list {
     width: 100%;
     height: 228px;
     display: flex;
@@ -565,17 +576,17 @@
     scrollbar-width: none;
   }
 
-  .shegeftsabz .bottomshegeft::-webkit-scrollbar {
+  .flash-deals-green .flash-deals-green-list::-webkit-scrollbar {
     display: none;
   }
 
-  .timer {
+  .countdown {
     display: flex;
     gap: 8px;
     direction: ltr;
   }
 
-  .timebox {
+  .countdown-unit {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -587,17 +598,17 @@
     box-shadow: 0 1px 4px #ccc;
   }
 
-  .timebox span {
+  .countdown-unit span {
     font-size: 18px;
     font-weight: bold;
   }
 
-  .timebox small {
+  .countdown-unit small {
     font-size: 9px;
     color: black;
   }
 
-  .shegeftsabz .topsabz span {
+  .flash-deals-green .flash-deals-green-header span {
     font-family: digi;
     color: white;
     font-size: 11px;
@@ -607,17 +618,18 @@
     right: auto;
   }
 
-  .dastebandi {
+  /* دسته‌بندی‌های دایره‌ای */
+  .category-circles {
     margin-top: 20px;
   }
 
-  .dastebandi .topside span {
+  .category-circles .category-circles-title span {
     font-family: digi;
     font-weight: bold;
     font-size: 14px;
   }
 
-  .midleside {
+  .category-circles-row-top {
     width: 100%;
     display: flex;
     gap: 16px;
@@ -629,13 +641,13 @@
     scrollbar-width: none;
   }
 
-  .story-item {
+  .category-circle {
     flex: 0 0 auto;
     width: 70px;
     text-align: center;
   }
 
-  .story-img {
+  .category-circle-img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -644,7 +656,7 @@
     box-sizing: border-box;
   }
 
-  .story-img img {
+  .category-circle-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -652,14 +664,14 @@
     display: block;
   }
 
-  .story-item span {
+  .category-circle span {
     display: block;
     margin-top: 7px;
     font-size: 11px;
     font-family: digi;
   }
 
-  .bottomside {
+  .category-circles-row-bottom {
     width: 100%;
     display: flex;
     gap: 16px;
@@ -671,13 +683,13 @@
     scrollbar-width: none;
   }
 
-  .mesvak {
+  .promo-banner-toothbrush {
     width: 100%;
     height: 144px;
     text-align: center;
   }
 
-  .mesvak img {
+  .promo-banner-toothbrush img {
     width: 90%;
     height: 143px;
     border-radius: 8px;
@@ -685,20 +697,20 @@
     align-items: center;
   }
 
-  .dastebandi .stories-wrapper {
+  .category-circles .category-circles-inner {
     overflow-x: auto;
     display: flex;
     flex-direction: column;
   }
 
-  .saat {
+  .promo-banner-watch {
     width: 100%;
     height: 144px;
     text-align: center;
     margin-top: 8px;
   }
 
-  .saat img {
+  .promo-banner-watch img {
     width: 90%;
     height: 143px;
     border-radius: 8px;
@@ -706,7 +718,8 @@
     align-items: center;
   }
 
-  .vitamine {
+  /* استایل مشترک بخش پیشنهادها */
+  .vitamins-section {
     width: 100%;
     height: 300px;
     display: flex;
@@ -714,21 +727,21 @@
     flex-direction: column;
   }
 
-  .vitamine .topvit {
+  .vitamins-section .vitamins-header {
     display: flex;
   }
 
-  .vitamine .topvit h5 {
+  .vitamins-section .vitamins-header h5 {
     font-family: digi;
     font-size: 14px;
     font-weight: 700;
   }
 
-  .vitamine .topvit a {
+  .vitamins-section .vitamins-header a {
     text-decoration: none;
   }
 
-  .vitamine .topvit .ptozih {
+  .vitamins-section .vitamins-header .see-all {
     font-family: digi;
     color: rgb(63, 64, 100);
     text-align: left;
@@ -738,7 +751,7 @@
     font-weight: 700;
   }
 
-  .vitamine .bottomvit {
+  .vitamins-section .vitamins-list {
     width: 100%;
     height: 240px;
     column-gap: 8px;
@@ -752,7 +765,7 @@
     box-sizing: border-box;
   }
 
-  .vitamine .bottomvit a {
+  .vitamins-section .vitamins-list a {
     display: flex;
     font-family: digi;
     width: 140px;
@@ -768,7 +781,7 @@
     overflow: hidden;
   }
 
-  .vitamine .middlevit p {
+  .vitamins-section .vitamins-subtitle p {
     font-family: digi;
     color: rgb(98, 102, 109);
     font-size: 12px;
@@ -776,13 +789,13 @@
     margin-top: 10px;
   }
 
-  .vitamine .bottomvit a .afterbeffore1 {
+  .vitamins-section .vitamins-list a .price-box {
     margin-top: auto;
     width: 100%;
     padding: 5px 8px 8px;
   }
 
-  .vitamine .bottomvit a .afterbeffore1 span {
+  .vitamins-section .vitamins-list a .price-box span {
     color: rgb(192, 194, 197);
     font-family: digi;
     font-size: 11px;
@@ -792,7 +805,7 @@
     display: inline-block;
   }
 
-  .vitamine .bottomvit a .red1 {
+  .vitamins-section .vitamins-list a .discount-badge {
     background-color: rgb(211, 47, 47);
     border-radius: 16px;
     color: white;
@@ -804,11 +817,11 @@
     padding: 2px 5px;
   }
 
-  .bottomvit a p {
+  .vitamins-list a p {
     color: rgb(66, 71, 80);
   }
 
-  .bottomvit a .price1 {
+  .vitamins-list a .final-price {
     align-items: center;
     display: flex;
     direction: rtl;
@@ -816,12 +829,13 @@
     gap: 5px;
   }
 
-  .vitamine .bottomvit a .price1 span {
+  .vitamins-section .vitamins-list a .final-price span {
     color: rgb(35, 37, 78);
     text-decoration: none;
   }
 
-  .daftar {
+  /* بخش لوازم‌التحریر */
+  .stationery-section {
     width: 100%;
     height: 300px;
     display: flex;
@@ -829,21 +843,21 @@
     flex-direction: column;
   }
 
-  .daftar .topdaf {
+  .stationery-section .stationery-header {
     display: flex;
   }
 
-  .daftar .topdaf h5 {
+  .stationery-section .stationery-header h5 {
     font-family: digi;
     font-size: 14px;
     font-weight: 700;
   }
 
-  .daftar .topdaf a {
+  .stationery-section .stationery-header a {
     text-decoration: none;
   }
 
-  .daftar .topdaf .ptozih {
+  .stationery-section .stationery-header .see-all {
     font-family: digi;
     color: rgb(63, 64, 100);
     text-align: left;
@@ -853,7 +867,7 @@
     font-weight: 700;
   }
 
-  .daftar .bottomdaf {
+  .stationery-section .stationery-list {
     width: 100%;
     height: 240px;
     column-gap: 8px;
@@ -867,7 +881,7 @@
     box-sizing: border-box;
   }
 
-  .daftar .bottomdaf a {
+  .stationery-section .stationery-list a {
     display: flex;
     font-family: digi;
     width: 140px;
@@ -883,7 +897,7 @@
     overflow: hidden;
   }
 
-  .daftar .middledaf p {
+  .stationery-section .stationery-subtitle p {
     font-family: digi;
     color: rgb(98, 102, 109);
     font-size: 12px;
@@ -891,13 +905,13 @@
     margin-top: 10px;
   }
 
-  .daftar .bottomdaf a .afterbeffore1 {
+  .stationery-section .stationery-list a .price-box {
     margin-top: auto;
     width: 100%;
     padding: 5px 8px 8px;
   }
 
-  .daftar .bottomdaf a .afterbeffore1 span {
+  .stationery-section .stationery-list a .price-box span {
     color: rgb(192, 194, 197);
     font-family: digi;
     font-size: 11px;
@@ -907,7 +921,7 @@
     display: inline-block;
   }
 
-  .daftar .bottomdaf a .red1 {
+  .stationery-section .stationery-list a .discount-badge {
     background-color: rgb(211, 47, 47);
     border-radius: 16px;
     color: white;
@@ -919,11 +933,11 @@
     padding: 2px 5px;
   }
 
-  .bottomdaf a p {
+  .stationery-list a p {
     color: rgb(66, 71, 80);
   }
 
-  .bottomdaf a .price1 {
+  .stationery-list a .final-price {
     align-items: center;
     display: flex;
     direction: rtl;
@@ -931,19 +945,20 @@
     gap: 5px;
   }
 
-  .daftar .bottomdaf a .price1 span {
+  .stationery-section .stationery-list a .final-price span {
     color: rgb(35, 37, 78);
     text-decoration: none;
   }
 
-  .bannersaat {
+  /* بنر بین بخش‌ها */
+  .promo-banner-mid {
     width: 100%;
     height: 144px;
     text-align: center;
     margin-top: 10px;
   }
 
-  .bannersaat img {
+  .promo-banner-mid img {
     width: 90%;
     height: 143px;
     border-radius: 8px;
@@ -951,7 +966,8 @@
     align-items: center;
   }
 
-  .cover {
+  /* بخش موبایل، قاب و هدفون */
+  .products-section {
     width: 100%;
     height: 300px;
     display: flex;
@@ -959,21 +975,21 @@
     flex-direction: column;
   }
 
-  .cover .topcov {
+  .products-section .products-header {
     display: flex;
   }
 
-  .cover .topcov h5 {
+  .products-section .products-header h5 {
     font-family: digi;
     font-size: 14px;
     font-weight: 700;
   }
 
-  .cover .topcov a {
+  .products-section .products-header a {
     text-decoration: none;
   }
 
-  .cover .topcov .ptozih {
+  .products-section .products-header .see-all {
     font-family: digi;
     color: rgb(63, 64, 100);
     text-align: left;
@@ -983,7 +999,7 @@
     font-weight: 700;
   }
 
-  .cover .bottomcov {
+  .products-section .products-list {
     width: 100%;
     height: 240px;
     column-gap: 8px;
@@ -997,7 +1013,7 @@
     box-sizing: border-box;
   }
 
-  .cover .bottomcov a {
+  .products-section .products-list a {
     display: flex;
     font-family: digi;
     width: 140px;
@@ -1013,7 +1029,7 @@
     overflow: hidden;
   }
 
-  .cover .middlecov p {
+  .products-section .products-subtitle p {
     font-family: digi;
     color: rgb(98, 102, 109);
     font-size: 12px;
@@ -1021,13 +1037,13 @@
     margin-top: 10px;
   }
 
-  .cover .bottomcov a .afterbeffore1 {
+  .products-section .products-list a .price-box {
     margin-top: auto;
     width: 100%;
     padding: 5px 8px 8px;
   }
 
-  .cover .bottomcov a .afterbeffore1 span {
+  .products-section .products-list a .price-box span {
     color: rgb(192, 194, 197);
     font-family: digi;
     font-size: 11px;
@@ -1037,7 +1053,7 @@
     display: inline-block;
   }
 
-  .cover .bottomcov a .red1 {
+  .products-section .products-list a .discount-badge {
     background-color: rgb(211, 47, 47);
     border-radius: 16px;
     color: white;
@@ -1049,11 +1065,11 @@
     padding: 2px 5px;
   }
 
-  .bottomcov a p {
+  .products-list a p {
     color: rgb(66, 71, 80);
   }
 
-  .bottomcov a .price1 {
+  .products-list a .final-price {
     align-items: center;
     display: flex;
     direction: rtl;
@@ -1061,60 +1077,61 @@
     gap: 5px;
   }
 
-  .cover .bottomcov a .price1 span {
+  .products-section .products-list a .final-price span {
     color: rgb(35, 37, 78);
     text-decoration: none;
   }
 
-  .vitamine,
-  .daftar,
-  .cover {
+  /* اندازه کارت‌ها و قیمت */
+  .vitamins-section,
+  .stationery-section,
+  .products-section {
     height: 300px;
     margin-top: 20px;
   }
 
-  .vitamine .topvit,
-  .daftar .topdaf,
-  .cover .topcov {
+  .vitamins-section .vitamins-header,
+  .stationery-section .stationery-header,
+  .products-section .products-header {
     width: 100%;
     min-height: 24px;
     align-items: center;
     justify-content: space-between;
   }
 
-  .vitamine .topvit h5,
-  .daftar .topdaf h5,
-  .cover .topcov h5 {
+  .vitamins-section .vitamins-header h5,
+  .stationery-section .stationery-header h5,
+  .products-section .products-header h5 {
     margin: 0;
     font-size: 14px;
   }
 
-  .vitamine .topvit .ptozih,
-  .daftar .topdaf .ptozih,
-  .cover .topcov .ptozih {
+  .vitamins-section .vitamins-header .see-all,
+  .stationery-section .stationery-header .see-all,
+  .products-section .products-header .see-all {
     position: static;
     margin: 0;
     font-size: 11px;
   }
 
-  .vitamine .middlevit,
-  .daftar .middledaf,
-  .cover .middlecov {
+  .vitamins-section .vitamins-subtitle,
+  .stationery-section .stationery-subtitle,
+  .products-section .products-subtitle {
     min-height: 25px;
   }
 
-  .vitamine .bottomvit,
-  .daftar .bottomdaf,
-  .cover .bottomcov {
+  .vitamins-section .vitamins-list,
+  .stationery-section .stationery-list,
+  .products-section .products-list {
     height: 240px;
     margin-top: 10px;
     gap: 8px;
     padding: 0 5px;
   }
 
-  .vitamine .bottomvit a,
-  .daftar .bottomdaf a,
-  .cover .bottomcov a {
+  .vitamins-section .vitamins-list a,
+  .stationery-section .stationery-list a,
+  .products-section .products-list a {
     width: calc((100% - 48px) / 5);
     min-width: calc((100% - 48px) / 5);
     height: 240px;
@@ -1122,9 +1139,9 @@
     border-radius: 6px;
   }
 
-  .vitamine .bottomvit a > img,
-  .daftar .bottomdaf a > img,
-  .cover .bottomcov a > img {
+  .vitamins-section .vitamins-list a > img,
+  .stationery-section .stationery-list a > img,
+  .products-section .products-list a > img {
     width: 100%;
     height: 116px;
     padding: 5px;
@@ -1132,9 +1149,9 @@
     flex-shrink: 0;
   }
 
-  .vitamine .bottomvit a > p,
-  .daftar .bottomdaf a > p,
-  .cover .bottomcov a > p {
+  .vitamins-section .vitamins-list a > p,
+  .stationery-section .stationery-list a > p,
+  .products-section .products-list a > p {
     height: 38px;
     margin: 0;
     padding: 0 6px;
@@ -1148,9 +1165,9 @@
     -webkit-line-clamp: 2;
   }
 
-  .vitamine .bottomvit a .afterbeffore1,
-  .daftar .bottomdaf a .afterbeffore1,
-  .cover .bottomcov a .afterbeffore1 {
+  .vitamins-section .vitamins-list a .price-box,
+  .stationery-section .stationery-list a .price-box,
+  .products-section .products-list a .price-box {
     position: relative;
     width: 100%;
     height: 58px;
@@ -1159,9 +1176,9 @@
     box-sizing: border-box;
   }
 
-  .vitamine .bottomvit a .afterbeffore1 > span,
-  .daftar .bottomdaf a .afterbeffore1 > span,
-  .cover .bottomcov a .afterbeffore1 > span {
+  .vitamins-section .vitamins-list a .price-box > span,
+  .stationery-section .stationery-list a .price-box > span,
+  .products-section .products-list a .price-box > span {
     position: absolute;
     top: 0;
     left: 42px;
@@ -1174,9 +1191,9 @@
     text-align: left;
   }
 
-  .vitamine .bottomvit a .red1,
-  .daftar .bottomdaf a .red1,
-  .cover .bottomcov a .red1 {
+  .vitamins-section .vitamins-list a .discount-badge,
+  .stationery-section .stationery-list a .discount-badge,
+  .products-section .products-list a .discount-badge {
     position: absolute;
     top: 0;
     left: 6px;
@@ -1191,9 +1208,9 @@
     box-sizing: border-box;
   }
 
-  .vitamine .bottomvit a .price1,
-  .daftar .bottomdaf a .price1,
-  .cover .bottomcov a .price1 {
+  .vitamins-section .vitamins-list a .final-price,
+  .stationery-section .stationery-list a .final-price,
+  .products-section .products-list a .final-price {
     position: absolute;
     left: 6px;
     bottom: 6px;
@@ -1205,23 +1222,24 @@
     width: max-content;
   }
 
-  .vitamine .bottomvit a .price1 img,
-  .daftar .bottomdaf a .price1 img,
-  .cover .bottomcov a .price1 img {
+  .vitamins-section .vitamins-list a .final-price img,
+  .stationery-section .stationery-list a .final-price img,
+  .products-section .products-list a .final-price img {
     order: -1;
     width: 15px;
     height: 15px;
   }
 
-  .vitamine .bottomvit a .price1 span,
-  .daftar .bottomdaf a .price1 span,
-  .cover .bottomcov a .price1 span {
+  .vitamins-section .vitamins-list a .final-price span,
+  .stationery-section .stationery-list a .final-price span,
+  .products-section .products-list a .final-price span {
     margin: 0;
     font-size: 10px;
     font-weight: 700;
     line-height: 1.2;
   }
 
+  /* منوی خدمات */
   .category-bar {
     width: 100%;
     height: 92px;
@@ -1272,24 +1290,25 @@
     white-space: normal;
   }
 
-  .storyline .swiper2,
-  .midleside,
-  .bottomside,
-  .vitamine .bottomvit,
-  .daftar .bottomdaf,
-  .cover .bottomcov {
+  .story-rail .story-slider,
+  .category-circles-row-top,
+  .category-circles-row-bottom,
+  .vitamins-section .vitamins-list,
+  .stationery-section .stationery-list,
+  .products-section .products-list {
     scrollbar-width: none;
   }
 
-  .storyline .swiper2::-webkit-scrollbar,
-  .midleside::-webkit-scrollbar,
-  .bottomside::-webkit-scrollbar,
-  .vitamine .bottomvit::-webkit-scrollbar,
-  .daftar .bottomdaf::-webkit-scrollbar,
-  .cover .bottomcov::-webkit-scrollbar {
+  .story-rail .story-slider::-webkit-scrollbar,
+  .category-circles-row-top::-webkit-scrollbar,
+  .category-circles-row-bottom::-webkit-scrollbar,
+  .vitamins-section .vitamins-list::-webkit-scrollbar,
+  .stationery-section .stationery-list::-webkit-scrollbar,
+  .products-section .products-list::-webkit-scrollbar {
     display: none;
   }
 
+  /* تنظیمات آیپد مینی */
   @media (min-width: 577px) and (max-width: 768px) {
     * {
       box-sizing: border-box;
@@ -1305,19 +1324,15 @@
       overflow-x: hidden;
     }
 
-    /* =========================
+    /* بنر بالا */
 
-       TOP BANNER
-
-    ========================= */
-
-    .bannertop {
+    .top-banner {
       width: 100%;
 
       height: 55px;
     }
 
-    .bannertop img {
+    .top-banner img {
       width: 100%;
 
       height: 55px;
@@ -1325,11 +1340,7 @@
       object-fit: cover;
     }
 
-    /* =========================
-
-       CATEGORY BAR
-
-    ========================= */
+    /* نوار دسته‌بندی */
 
     .category-bar {
       width: 100%;
@@ -1415,11 +1426,7 @@
       white-space: normal;
     }
 
-    /* =========================
-
-       HEADER
-
-    ========================= */
+    /* هدر */
 
     header {
       width: 100%;
@@ -1435,13 +1442,9 @@
       height: 85px;
     }
 
-    /* =========================
+    /* نوار جستجو */
 
-       NAVBAR / SEARCH
-
-    ========================= */
-
-    .bottom-side-fullbox {
+    .search-header {
       width: 100%;
 
       height: 75px;
@@ -1459,7 +1462,7 @@
       z-index: 5;
     }
 
-    .insidebox-bottomside {
+    .search-header-inner {
       width: 100%;
 
       height: 75px;
@@ -1469,7 +1472,7 @@
       overflow: hidden;
     }
 
-    .top-bottomside {
+    .search-header-row {
       width: 100%;
 
       height: 48px;
@@ -1477,7 +1480,7 @@
       padding: 0 20px;
     }
 
-    .insidebox-top-bottomside {
+    .search-header-content {
       width: 100%;
 
       height: 48px;
@@ -1493,7 +1496,7 @@
       flex-flow: row nowrap;
     }
 
-    .rightinsidebox-top-bottomside {
+    .search-header-right {
       height: 46px;
 
       flex: 1;
@@ -1511,7 +1514,7 @@
       display: flex;
     }
 
-    .searchbox-bottomside {
+    .search-bar {
       width: 100%;
 
       height: 46px;
@@ -1547,7 +1550,7 @@
       height: 25px;
     }
 
-    .search-text-full-box {
+    .search-input {
       width: auto;
 
       height: 46px;
@@ -1567,7 +1570,7 @@
       font-size: 14px;
     }
 
-    .text-box {
+    .search-placeholder {
       width: auto;
 
       height: 40px;
@@ -1579,7 +1582,7 @@
       gap: 5px;
     }
 
-    .jostoju {
+    .search-label {
       height: auto;
 
       font-family: digi;
@@ -1593,7 +1596,7 @@
       white-space: nowrap;
     }
 
-    .digikalasvg {
+    .search-brand-logo {
       margin-top: 0;
 
       display: flex;
@@ -1601,7 +1604,7 @@
       align-items: center;
     }
 
-    .digikalasvg img {
+    .search-brand-logo img {
       width: 65px;
 
       height: 18px;
